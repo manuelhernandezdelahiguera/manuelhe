@@ -25,9 +25,9 @@ void	rush(int fila, int columna)
 		j = 0;
 		while (j < fila)
 		{
-			if ((i == 0 || i == columna) && (j == 0))
+			if ((i == 0 || i == columna - 1) && (j == 0))
 				ft_putchar('A');
-			else if ((j == 0 || j == columna) && (i == 0 || i == fila))
+			else if ((j == fila) && (j == columna))
 				ft_putchar('C');
 			else if ((i == 0 || i == columna - 1) || (j == 0 || j == fila - 1))
 				ft_putchar('B');
